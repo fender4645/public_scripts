@@ -1,0 +1,2 @@
+This is a simple script that take the work of https://github.com/richarddong/ikea-monitor, parses the json,
+and sends an email if ordering is open for Click and Collect and the Emmeryville or East Palo Alto stores.
