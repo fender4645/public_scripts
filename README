@@ -1,2 +1,16 @@
 This is a simple script that take the work of https://github.com/richarddong/ikea-monitor, parses the json,
 and sends an email if ordering is open for Click and Collect and the Emmeryville or East Palo Alto stores.
+
+Usage:
+
+Download the raw file on to your computer and edit with your favorite editor. Update the constants at the
+top with your information: SENDER, RECIPIENT, SMTP_SERVER, SMTP_USER, and SMTP_PASSWORD. To run once, open
+your Terminal app, cd to the directory where the script is and run:
+
+python3 ikea_notify_email.py
+
+To have this run on a schedule, just add a cronjob. Open up Terminal and type "crontab -e" and add the following line:
+
+# * * * * * python3 /path/to/script/ikea_notifier.py
+
+Replace the path with the path to where your script is located.
